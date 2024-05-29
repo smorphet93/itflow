@@ -221,6 +221,111 @@ $asset_makes_array = array (
     'Other'
 );
 
+// Populates the drop-down for model (IF Extra Oral type selected)
+$asset_model_extraoral_array = array (
+    'CS 8000',
+    'CS 8000C',
+    'CS 9000',
+    'CS 9000c',
+    'CS 8100 2d',
+    'CS 8100 3d',
+    'CS 8100 3d SC',
+    'CS 8200 Neo 3d',
+    'CS 8200 Neo 3d SC',
+    'CS 8200 Access',
+    'CS 8200 Access SC',
+    'CS 9600',
+    'CS 9600 SC',
+    'Prime 2d',
+    'Prime 3d',
+);
+
+// Populates the drop-down for model (IF Intra Oral type selected)
+$asset_model_intraoral_array = array (
+    '2100',
+    '2200',
+    'X-Mind Unity',
+    'X-Mind DC',
+    'CS 7600',
+    'CS 7200',
+    'PS Pix',
+    'CS 5100 #1',
+    'CS 5100 #2',
+    'CS 5200 #1',
+    'CS 5200 #2',
+    'CS 6100 #1',
+    'CS 6100 #2',
+    'CS 6200 #1',
+    'CS 6200 #2',
+);
+
+// Populates the drop-down for model (IF Intra Oral scanner type selected)
+$asset_model_intraoralscan_array = array (
+    'CS 3600',
+    'CS 3700',
+    'CS 3800 Wireless',
+    'Dexis 3800 Wired',
+    'Dexis 3800 Wireless',
+    'ITero Flex CPO',
+    'iTero Flex',
+    'iTero 5d',
+);
+
+// Populates the drop-down for model (IF Intra Oral camera type selected)
+$asset_model_intraoralcam_array = array (
+    'CS 1200',
+    'CS 1500',
+    'Acteon C50',
+    'Acteon Sporo',
+);
+
+// Populates the drop-down for model (IF Server type selected)
+$asset_model_server_array = array (
+    'Rack Mount',
+    'Tower',
+    'Other',
+);
+
+// Populates the drop-down for model (IF Workstation type selected)
+$asset_model_workstation_array = array (
+    'Mico Tower',
+    'SFF',
+    'Tower',
+    'Notebook',
+    'AOI',
+    'Tablet',
+    'Other',
+);
+
+// Populates the drop-down for model (IF DI Acquisition PC type selected)
+$asset_model_dia_array = array (
+    '3d (Prime Dell)',
+    '3d Custom',
+    '2d',
+    '2d for SC',
+    'Other Custom',
+);
+
+// Populates the drop-down for model (IF IT Other type selected)
+$asset_model_itother_array = array (
+    'Network Switch',
+    'Printer',
+    'Monitor',
+    'Keyboard/Mouse',
+    'Tablet',
+    'Scanner',
+    'Other'
+);
+
+// Populates the drop-down for model (IF Software type selected)
+$asset_model_software_array = array (
+    'Orthobridge',
+    'Orthotrac',
+    'CSI',
+    'AIS',
+    'Other'
+);
+
 //    Original
 //    'Laptop'=>'fa-laptop',
 //    'Desktop'=>'fa-desktop',

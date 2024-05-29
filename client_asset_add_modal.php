@@ -95,12 +95,19 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Model</label>
+                                    <label>Model <strong class="text-danger">*</strong></label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-fw fa-tag"></i></span>
                                         </div>
-                                        <input type="text" class="form-control" name="model" placeholder="Model Number">
+                                        <select class="form-control select2" name="model" required>
+                                            <option value="">- Model -</option>
+                                            <?php //Only display relevant models
+                                            if ($_GET['type'] !== 'Server') { ?>
+                                                <?php foreach($asset_model_server_array as $asset_model) { ?>
+                                                <option><?php echo $asset_model; ?></option>
+                                                <?php } ?>
+                                            <?php } ?>
                                     </div>
                                 </div>
 
