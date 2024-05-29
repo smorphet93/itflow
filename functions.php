@@ -652,7 +652,7 @@ function getAssetIcon($asset_type)
 {
     if ($asset_type == 'Laptop') {
         $device_icon = "laptop";
-    } elseif ($asset_type == 'Desktop') {
+    } elseif ($asset_type == 'Workstation' || $asset_type == 'DI Acquisition PC') {
         $device_icon = "desktop";
     } elseif ($asset_type == 'Server') {
         $device_icon = "server";
@@ -660,7 +660,7 @@ function getAssetIcon($asset_type)
         $device_icon = "print";
     } elseif ($asset_type == 'Camera') {
         $device_icon = "video";
-    } elseif ($asset_type == 'Switch' || $asset_type == 'Firewall/Router') {
+    } elseif ($asset_type == 'Switch' || $asset_type == 'Firewall/Router' || $asset_type == 'IT Other') {
         $device_icon = "network-wired";
     } elseif ($asset_type == 'Access Point') {
         $device_icon = "wifi";
@@ -674,6 +674,14 @@ function getAssetIcon($asset_type)
         $device_icon = "tv";
     } elseif ($asset_type == 'Virtual Machine') {
         $device_icon = "cloud";
+    } elseif ($asset_type == 'X-Ray Extra Oral' ||
+        $asset_type == 'X-Ray Intra Oral' ||
+        $asset_type == 'Intra Oral Scanner') {
+        $device_icon = "radiation";
+    } elseif ($asset_type == 'Intra Oral Camera') {
+        $device_icon = "camera";
+    } elseif ($asset_type == 'Software') {
+        $device_icon = "save";
     } else {
         $device_icon = "tag";
     }

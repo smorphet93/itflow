@@ -205,7 +205,7 @@ $asset_types_array = array (
     'Workstation'=>'fa-desktop',
     'DI Acquisition PC'=>'fa-desktop',
     'IT Other'=>'fa-ethernet',
-    'Software'=>'fa-floppy-o'
+    'Software'=>'fa-save'
 );
 
 // Populates the drop-down list for asset manufacturers
