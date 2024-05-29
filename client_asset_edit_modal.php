@@ -72,14 +72,20 @@
                             </div>
 
                             <?php //Do not display Make Model or Serial if Virtual is selected
-                            if ($asset_type !== 'virtual') { ?>
+                            if ($_GET['type'] !== 'virtual') { ?>
                                 <div class="form-group">
-                                    <label>Make </label>
+                                    <label>Make <strong class="text-danger">*</strong></label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-fw fa-tag"></i></span>
                                         </div>
-                                        <input type="text" class="form-control" name="make" placeholder="Manufacturer" value="<?php echo $asset_make; ?>">
+                                        <select class="form-control select2" name="make" required>
+                                            <option value="">- Manufacturer -</option>
+                                            <?php foreach($asset_makes_array as $asset_make) { ?>
+                                                <option><?php echo $asset_make; ?></option>
+                                            <?php } ?>
+                                        </select>
+<!--                                        <input type="text" class="form-control" name="make" placeholder="Manufacturer">-->
                                     </div>
                                 </div>
 
